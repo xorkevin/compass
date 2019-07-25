@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <section>
+    {{ range .Data.Pages }}
+      <div>
+        <a href="{{.RelPermalink}}">{{.Title}}</a>
+      </div>
+    {{ end }}
+  </section>
+{{ end }}

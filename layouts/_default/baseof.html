@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}{{ $.Site.Title }} {{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="xorkevin/compass; Hugo v{{hugo.Version}}">
+    {{ block "head" . }}{{end}}
+  </head>
+  <body>
+    <main class="main" role="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+  </body>
+</html>
