@@ -1,11 +1,11 @@
 {{ define "head" }}
   <meta name="go-import" content="{{$.Site.Params.gomodroot}}/{{.Params.gomod}} {{.Params.govcs}} {{.Params.gorepourl}}">
   <meta name="go-source" content="{{$.Site.Params.gomodroot}}/{{.Params.gomod}} {{.Params.gorepourl}} {{.Params.gorepourl}}/tree/master{/dir} {{.Params.gorepourl}}/blob/master{/dir}/{file}#L{line}">
-  <meta http-equiv="refresh" content="0; url={{.Params.gorepourl}}">
 {{ end }}
 {{ define "main" }}
   <section>
     <h1>{{.Title}}</h1>
+    <a target="_blank" rel="noopener noreferrer" href="{{.Params.gorepourl}}">{{.Params.gorepourl}}</a>
     {{.Content}}
   </section>
 {{ end }}
