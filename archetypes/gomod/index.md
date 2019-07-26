@@ -8,5 +8,6 @@ description: ''
 gomod: '{{.Name}}'
 govcs: 'git'
 gorepourl: ''
+aliases: []
 draft: true
 ---
