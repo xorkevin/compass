@@ -1,5 +1,6 @@
 ---
 name: '{{.Name}}'
+type: 'gomod'
 title: '{{ replace .Name "-" " " | title }}'
 author: ''
 date: {{.Date}}
