@@ -1,7 +1,7 @@
 {{ define "head" }}
   {{ if .Page.Params.gorepourl }}
-  <meta name="go-import" content="{{$.Site.Params.gomodroot}}/{{.Page.RelPermalink}} {{.Params.govcs}} {{.Params.gorepourl}}">
-  <meta name="go-source" content="{{$.Site.Params.gomodroot}}/{{.Page.RelPermalink}} {{.Params.gorepourl}} {{.Params.gorepourl}}/tree/master{/dir} {{.Params.gorepourl}}/blob/master{/dir}/{file}#L{line}">
+  <meta name="go-import" content="{{$.Site.Params.gomodroot}}{{.Page.RelPermalink}} {{.Params.govcs}} {{.Params.gorepourl}}">
+  <meta name="go-source" content="{{$.Site.Params.gomodroot}}{{.Page.RelPermalink}} {{.Params.gorepourl}} {{.Params.gorepourl}}/tree/master{/dir} {{.Params.gorepourl}}/blob/master{/dir}/{file}#L{line}">
   {{ end }}
   <title>{{.Permalink}}</title>
   <link rel="canonical" href="{{.Permalink}}"/>
